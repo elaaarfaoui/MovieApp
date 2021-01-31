@@ -11,6 +11,8 @@ import Button from "@material-ui/core/Button";
 import { Box } from "@material-ui/core";
 import Rating from "@material-ui/lab/Rating";
 import { Form, Navbar, Nav, FormControl } from "react-bootstrap";
+import {Link} from "react-router-dom"; 
+
 
 
 const useStyles = makeStyles((theme) => ({
@@ -85,8 +87,12 @@ export default function SearchAppBar({handleSearch, setRate}) {
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
             Movie-App
-          </Typography>
+          <Link to ={'/'}>
+          <span style={{color: "white",fontSize:"60%", marginLeft :"2%" }} >Home</span>
+          </Link>
 
+          </Typography>
+          
           <Box
             className="ratingSearch"
             component="fieldset"
@@ -100,12 +106,12 @@ export default function SearchAppBar({handleSearch, setRate}) {
             />
           </Box>
 
-          <div className={classes.search} style={{ marginRight: "2%" }}>
+          <div className={classes.search} style={{ marginRight: "6%" }}>
             <div className={classes.searchIcon}>
               <SearchIcon />
             </div>
-            <Form inline>
-          <FormControl
+            <Form inline style={{marginLeft: "24%"}}>
+          <FormControl 
             type="text"
             placeholder="Search"
             className="mr-sm-2"
@@ -116,5 +122,7 @@ export default function SearchAppBar({handleSearch, setRate}) {
         </Toolbar>
       </AppBar>
     </div>
+    
   );
 }
+

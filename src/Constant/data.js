@@ -7,6 +7,8 @@ export default [
     posterURL:
       "https://cache.cosmopolitan.fr/data/photo/w1000_ci/4s/madagascar.jpg",
     rating: "5",
+    trailerPage: 
+      "https://www.youtube.com/watch?v=BaK_dCpAidE",
   },
   {
       id:2,
@@ -16,6 +18,9 @@ export default [
     posterURL:
       "https://images.epagine.fr/998/9782017088998_1_75.jpg",
     rating: "5",
+    trailerPage: 
+      "https://youtu.be/-KfIYw-D4Iw",
+
   },
   {
       id:3,
@@ -25,6 +30,9 @@ export default [
     posterURL:
     "https://images-na.ssl-images-amazon.com/images/I/71FfBB1KVAL._AC_SY679_.jpg",
     rating: "2",
+    trailerPage: 
+      "https://www.youtube.com/watch?v=mryRcoTO4tY",
+
   },
   {
       id:4,
@@ -34,6 +42,9 @@ export default [
     posterURL:
     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG9sMJ-bbnkF_Y2hixSYKGbu2Dd74wROmwgg&usqp=CAU",
     rating: "5",
+    trailerPage: 
+      "https://www.youtube.com/watch?v=uyP70r9PS6A",
+
   },
   {
     id:5,
@@ -42,7 +53,10 @@ export default [
     " La Pat' Patrouille compte six chiots héroïques qui répondent aux noms de Chase, Marcus, Rocky, Ruben, Zuma, et Stella. Ils sont menés par Ryder, un garçon de 10 ans féru de technologie. Tous ensemble, ils vivent des aventures palpitantes pour protéger la communauté de la Grande Vallée.",
   posterURL:
   "https://images.bfmtv.com/7hWFWyseQ8e-4K5_oJeUDJAZpJA=/0x0:800x450/375x0/images/PatPatrouille-379193.jpg",
-  rating: "4",
+  rating: "3",
+  trailerPage: 
+      "https://www.youtube.com/watch?v=oTitd-go4hU",
+
 },
 {
   id:6,
@@ -51,7 +65,10 @@ description:
   " Cette série met en scène Shaun, un mouton malicieux qui vit dans une ferme en compagnie de ses amis ovins nettement moins malins que lui, mais toujours prêts à le suivre dans une nouvelle aventure.",
 posterURL:
 "https://silentlondon.files.wordpress.com/2015/01/shaun_chase_quad_uk-release-date.jpg",
-rating: "4",
+rating: "3",
+trailerPage: 
+      "https://www.youtube.com/watch?v=KRSDoVOkEas",
+
 },
 
   ];

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import { makeStyles } from '@material-ui/core/styles';
 import clsx from 'clsx';
 import Card from '@material-ui/core/Card';
@@ -14,7 +14,7 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import StarRateIcon from '@material-ui/icons/StarRate';
 import { Box } from "@material-ui/core";
 import Rating from "@material-ui/lab/Rating";
-
+import {Link} from "react-router-dom"; 
 
 
 const useStyles = makeStyles((theme) => ({
@@ -22,8 +22,9 @@ const useStyles = makeStyles((theme) => ({
       maxWidth: 345,
     },
     media: {
-      height: 0,
+      height: 100,
       paddingTop: '56.25%', // 16:9
+      witdh:100, 
     },
     expand: {
       transform: 'rotate(0deg)',
@@ -55,8 +56,16 @@ export default function MovieCard({movie}) {
     setExpanded(!expanded);
   };
 
+const [MovieCard, setMovieCard] = useState({})
+
+  
+
   return (
+
     <Card className={classes.root} style = {{width: "30%", textAlign: "center", marginTop: "10%", color: "rgb(29, 160, 247)"}} >
+        
+    {/* <Link to ={`/Details/${movie.id}`}>   */}
+    <Link to ={'/Details/'+ movie.id}>  
 
       <CardMedia
         className={classes.media}
@@ -93,8 +102,12 @@ export default function MovieCard({movie}) {
           <StarRateIcon/>
         </CardContent>
       </Collapse>
+    </Link>
     </Card>
   );
 }
+
+
+
 
        
